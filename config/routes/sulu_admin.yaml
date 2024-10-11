@@ -112,3 +112,9 @@ sulu_reference_api:
     resource: "@SuluReferenceBundle/Resources/config/routing_api.yml"
     type: rest
     prefix: /admin/api
+
+app_projects_api:
+    type: rest
+    prefix: /admin/api
+    resource: App\Controller\Admin\ProjectsController
+    name_prefix: app.

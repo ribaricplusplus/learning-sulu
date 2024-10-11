@@ -1,5 +1,10 @@
 sulu_admin:
     email: "%env(SULU_ADMIN_EMAIL)%"
+    resources:
+        projects:
+            routes:
+                list: app.get_projects
+                detail: app.get_project
     forms:
         directories:
             - "%kernel.project_dir%/config/forms"
